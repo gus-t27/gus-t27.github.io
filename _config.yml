@@ -29,7 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # twitter_username: jekyllrb
 github_username:  gus-t27
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
