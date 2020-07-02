@@ -31,4 +31,8 @@
   .sidenav a {font-size: 18px;}
 }
 
+.sidenav .social-links {
+  position: relative;
+  top: 550px;
+}
 
