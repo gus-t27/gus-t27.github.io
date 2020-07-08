@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.tools-title h5 {
+  text-align: center;
+}
+
 .dev-tools img {
   height: 45px;
   width: 45px;
@@ -31,9 +35,10 @@
 
 /*------- Sort hover after colour scheme has been set --------*/
 
-/*.card:hover {
+.card:hover {
   background-color: grey;
-}*/
+  cursor: pointer;
+}
 
 .dev-tools {
   display: grid;
