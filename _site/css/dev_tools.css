@@ -7,8 +7,12 @@
   align-items: center;
 }
 
-.tools-title h5 {
+.tools-title {
   text-align: center;
+}
+
+.dev-tools-outro {
+  margin-top: 50px;
 }
 
 .dev-tools img {
