@@ -1,7 +1,12 @@
 @import "about_cards.css";
 @import "dev_tools.css";
 @import "sidenav.css";
+@import "services.css";
+@import "about_me.css";
+@import "banner.css";
 
 body {
   background-color: #e4e3e3;
 }
+
+

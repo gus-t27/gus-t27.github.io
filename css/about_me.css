@@ -1,0 +1,6 @@
+.gus-img img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
