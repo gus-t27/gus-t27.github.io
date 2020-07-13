@@ -1,5 +1,5 @@
 
-.sidenav {
+/*.navbar {
   height: 100%;
   width: 70px;
   position: fixed;
@@ -13,38 +13,42 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 
-.sidenav .page-links a {
+.navbar .page-links a {
   padding: 6px 6px 48px 20px;
   text-decoration: none;
   font-size: 25px;
+  color: #84a9ac;
+}
+
+
+.navbar .page-links a:hover {
   color: #818181;
-  display: block;
+  text-decoration: underline;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
-.main {
-  margin-left: 70px; /* Same as the width of the sidenav */
-}
+/*@media screen and (max-height: 450px) {
+  .navbar {padding-top: 15px;}
+  .navbar a {font-size: 18px;}
+}*/
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.sidenav .social-links a {
+.navbar .social-links a {
   padding: 6px 6px 6px 20px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
-  display: block;
+  color: #84a9ac;
 }
 
-.sidenav .social-links a:hover {
-  color: #f1f1f1;
+.navbar .social-links a:hover {
+  color: #818181;
 }
 
