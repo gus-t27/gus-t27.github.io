@@ -29,6 +29,10 @@
   color: #84a9ac;
 }
 
+.navbar .page-links i {
+  padding-right: 5px;
+}
+
 
 .navbar .page-links a:hover {
   color: #818181;
