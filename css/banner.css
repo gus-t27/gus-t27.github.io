@@ -16,7 +16,7 @@
   object-fit: cover;
 }
 
-.banner .title {
+.banner .banner-title {
   color: #e2e2e2;
   position: relative;
   bottom: 500px;
@@ -28,7 +28,7 @@
   padding: 10px 20px;
 }
 
-.banner .title h1 {
+.banner .banner-title h1 {
   font-weight: bold;
 }
 
