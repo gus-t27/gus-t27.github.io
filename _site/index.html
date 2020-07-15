@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div class="navbar navbar-transparent navbar-expand-sm navbar-light">
+    <div class="navbar navbar-expand-sm navbar-light">
       <div class="nav-left">
         <div class="title" style="color: #84a9ac;">
           <h3>Gus Threlfall</h3>
@@ -32,7 +32,8 @@
           <a href="https://uk.linkedin.com/in/gus-threlfall-5b054918b" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-      <div class="page-links">
+
+      <div class="dropdown-content page-links">
         <a href="#home"><i class="fas fa-home"></i>Home</a>
         <a href="#code"><i class="fas fa-code"></i>Projects</a>
         <a href="#tools"><i class="fas fa-cubes"></i>Tools</a>
@@ -41,7 +42,7 @@
     </div>
 
     <div class="main">
-      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      <div class="banner" id="home" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url('css/images/banner1.jpg'); background-size: cover; background-position: 50% 0%; height: 100vh;">
         <img src="css/images/banner1.jpg" alt="Banner Image">
         <div class="banner-title">
@@ -52,7 +53,7 @@
           <a class="btn btn-success" href="#home">Learn More</a>
         </div>
       </div>
-      <div class="container about-me-container" id="home">
+      <div class="container about-me-container">
       </div>
       <div class="container services-container">
         <h1>What I do</h1>
@@ -377,8 +378,8 @@
       </div>
     </div>
 
-
-    <!-- <script src="scroll.js"></script> -->
+    <script type="text/javascript" src="javascript/nav_scroll.js"></script>
+    <script type="text/javascript" src="javascript/nav_responsive.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
