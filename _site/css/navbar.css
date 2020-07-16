@@ -1,9 +1,3 @@
-.navbar.solid {
-  background-color: #490D40;
-  transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px grey;
-}
-
 .nav-left {
   display: flex;
   flex-direction: row;
@@ -14,6 +8,11 @@
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  padding-bottom: 0px;
+}
+
+.shadow {
+  box-shadow: 0 4px 2px -2px #d4d4d4;
 }
 
 .navbar .page-links {
@@ -22,9 +21,9 @@
 }
 
 .navbar .page-links a {
-  padding: 0px 12px 0px 12px;
+  padding: 0px 6px 0px 6px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #84a9ac;
 }
 
@@ -39,22 +38,18 @@
 }
 
 
-@media screen and (max-height: 450px) {
-  .navbar {padding-top: 15px;}
-  .navbar a {font-size: 18px;}
-}
 
 .navbar .social-links a {
-  padding: 0px 4px 0px 4px;
+  padding: 0px 1px 0px 1px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #84a9ac;
 }
 
 .navbar .social-links {
   position: relative;
-  right: 23px;
-  bottom: 2px;
+  right: 62px;
+  bottom: 3px;
 }
 
 .navbar .social-links a:hover {
@@ -63,6 +58,11 @@
 
 .page-links .icon {
   display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .navbar {padding-top: 15px;}
+  .navbar a {font-size: 18px;}
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the page-links (.icon) */

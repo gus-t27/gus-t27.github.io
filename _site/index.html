@@ -21,10 +21,10 @@
   </head>
 
   <body>
-    <div class="navbar navbar-expand-sm navbar-light">
+    <div class="navbar navbar-dark navbar-expand-md bg-light shadow" id="nav">
       <div class="nav-left">
         <div class="title" style="color: #84a9ac;">
-          <h3>Gus Threlfall</h3>
+          <h5><strong>Gus Threlfall</strong></h5>
           <p>Full Stack Web Developer</p>
         </div>
         <div class="social-links">
@@ -50,10 +50,10 @@
           <h5>Catering to all of your web development needs</h5>
         </div>
         <div>
-          <a class="btn btn-success" href="#home">Learn More</a>
+          <a class="btn btn-success" href="#about">Learn More</a>
         </div>
       </div>
-      <div class="container about-me-container">
+      <div class="container about-me-container" id="about">
       </div>
       <div class="container services-container">
         <h1>What I do</h1>
@@ -82,9 +82,9 @@
         </div>
       </div>
       <div class="container projects-container" id="code">
-
       </div>
-      <div class="container tools-container" id="tools">
+
+      <div class="tools-container" id="tools">
         <div class="tools-title mt-5 mb-5">
           <h1>Tools I Use</h1>
           <h5>(Click on a tool for more info)</h5>
@@ -94,6 +94,52 @@
             <img src="css/images/ruby-logo.png" alt="ruby logo">
             <p>Ruby</p>
           </div>
+          <div class="card" data-toggle="modal" data-target="#railsModal">
+            <img src="css/images/ruby-on-rails-logo.png" alt="rails logo">
+            <p>Ruby on Rails</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#javascriptModal">
+            <img src="css/images/javascript-logo.png" alt="js logo">
+            <p>JavaScript</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#htmlModal">
+            <img src="css/images/html5-logo.png" alt="html logo">
+            <p>HTML5</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#cssModal">
+            <img src="css/images/css3-logo.png" alt="css logo">
+            <p>CSS3</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#scssModal">
+            <img src="css/images/scss-logo.png" alt="SCSS logo">
+            <p>Sass</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#postgresModal">
+            <img src="css/images/postgres-logo.png" alt="postgres logo">
+            <p>PostgreSQL</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#figmaModal">
+            <img src="css/images/figma-logo.png" alt="figma logo">
+            <p>Figma</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#bootstrapModal">
+            <img src="css/images/bootstrap-logo.png" alt="bootstrap logo">
+            <p>Bootstrap</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#githubModal">
+            <img src="css/images/github-logo.png" alt="github logo">
+            <p>GitHub</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#gitModal">
+            <img src="css/images/git-logo.png" alt="git logo">
+            <p>Git</p>
+          </div>
+          <div class="card" data-toggle="modal" data-target="#herokuModal">
+            <img src="css/images/heroku-logo.png" alt="heroku logo">
+            <p>Heroku</p>
+          </div>
+        </div>
+        <div class="modals">
           <div class="modal fade" id="rubyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -112,10 +158,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card" data-toggle="modal" data-target="#railsModal">
-            <img src="css/images/ruby-on-rails-logo.png" alt="rails logo">
-            <p>Ruby on Rails</p>
           </div>
           <div class="modal fade" id="railsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -137,10 +179,6 @@
               </div>
             </div>
           </div>
-          <div class="card" data-toggle="modal" data-target="#javascriptModal">
-            <img src="css/images/javascript-logo.png" alt="js logo">
-            <p>JavaScript</p>
-          </div>
           <div class="modal fade" id="javascriptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -159,10 +197,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card" data-toggle="modal" data-target="#htmlModal">
-            <img src="css/images/html5-logo.png" alt="html logo">
-            <p>HTML5</p>
           </div>
           <div class="modal fade" id="htmlModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -183,10 +217,6 @@
               </div>
             </div>
           </div>
-          <div class="card" data-toggle="modal" data-target="#cssModal">
-            <img src="css/images/css3-logo.png" alt="css logo">
-            <p>CSS3</p>
-          </div>
           <div class="modal fade" id="cssModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -205,10 +235,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card" data-toggle="modal" data-target="#scssModal">
-            <img src="css/images/scss-logo.png" alt="SCSS logo">
-            <p>Sass</p>
           </div>
           <div class="modal fade" id="scssModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -229,10 +255,6 @@
               </div>
             </div>
           </div>
-          <div class="card" data-toggle="modal" data-target="#postgresModal">
-            <img src="css/images/postgres-logo.png" alt="postgres logo">
-            <p>PostgreSQL</p>
-          </div>
           <div class="modal fade" id="postgresModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -251,10 +273,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card" data-toggle="modal" data-target="#figmaModal">
-            <img src="css/images/figma-logo.png" alt="figma logo">
-            <p>Figma</p>
           </div>
           <div class="modal fade" id="figmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -275,10 +293,6 @@
               </div>
             </div>
           </div>
-          <div class="card" data-toggle="modal" data-target="#bootstrapModal">
-            <img src="css/images/bootstrap-logo.png" alt="bootstrap logo">
-            <p>Bootstrap</p>
-          </div>
           <div class="modal fade" id="bootstrapModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -297,10 +311,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card" data-toggle="modal" data-target="#githubModal">
-            <img src="css/images/github-logo.png" alt="github logo">
-            <p>GitHub</p>
           </div>
           <div class="modal fade" id="githubModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -322,10 +332,6 @@
               </div>
             </div>
           </div>
-          <div class="card" data-toggle="modal" data-target="#gitModal">
-            <img src="css/images/git-logo.png" alt="git logo">
-            <p>Git</p>
-          </div>
           <div class="modal fade" id="gitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -344,10 +350,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card" data-toggle="modal" data-target="#herokuModal">
-            <img src="css/images/heroku-logo.png" alt="heroku logo">
-            <p>Heroku</p>
           </div>
           <div class="modal fade" id="herokuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -373,17 +375,18 @@
           <h2>More tools coming soon!</h2>
         </div>
       </div>
+
       <div class="container contact-container" id="contact">
 
       </div>
     </div>
 
-    <script type="text/javascript" src="javascript/nav_scroll.js"></script>
-    <script type="text/javascript" src="javascript/nav_responsive.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/nav_scroll.js"></script>
+    <script type="text/javascript" src="javascript/nav_responsive.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   </body>
 </html>
 
