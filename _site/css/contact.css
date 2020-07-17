@@ -1,3 +1,81 @@
 .contact-title {
   text-align: center;
 }
+
+.contact {
+  margin-top: 40px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  /*border: 1px solid #3b6978;*/
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #3b6978;
+  color: #e2e2e2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 4px 7px 7px 0px rgba(0,0,0,0.25);
+
+}
+
+
+.contact-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.contact-icon {
+  font-size: 50px;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: #E2E2E2;
+}
+
+.contact-link a:hover {
+  text-decoration: underline;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+

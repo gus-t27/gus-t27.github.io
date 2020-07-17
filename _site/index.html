@@ -39,7 +39,7 @@
         <a href="#home"><i class="fas fa-home"></i>Home</a>
         <a href="#code"><i class="fas fa-code"></i>Projects</a>
         <a href="#tools"><i class="fas fa-cubes"></i>Tools</a>
-        <a href="#contact" class="contact"><i class="fas fa-envelope"></i>Contact</a>
+        <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
       </div>
     </div>
 
@@ -62,7 +62,7 @@
         <br>
         <br>
         <div class="services">
-          <h2>What I do</h2>
+          <h2>Services</h2>
           <div class="cards mt-5 mb-5">
             <div class="card-category">
               <div class="card-body">
@@ -89,13 +89,13 @@
         </div>
         <div class="projects" id="code">
           <div class="projects-title">
-            <h2>What I've Done</h2>
+            <h2>Projects</h2>
           </div>
         </div>
 
         <div class="tools" id="tools">
           <div class="tools-title mt-5 mb-5">
-            <h2>Tools I Use</h2>
+            <h2>Development Tools</h2>
             <p>(Click on a tool for more info)</p>
           </div>
           <div class="dev-tools">
@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="dev-tools-outro">
-            <h3>More tools coming soon!</h3>
+            <h5>More tools coming soon!</h5>
           </div>
         </div>
         <div class="modals">
@@ -386,8 +386,46 @@
         </div>
 
         <div class="contact" id="contact">
-          <div class="contact-title">
+          <div class="contact-title mt-5 mb-5">
             <h2>Get In Touch!</h2>
+          </div>
+          <div class="form-container">
+            <div class="contact-card-container d-flex">
+              <div class="contact-card">
+                <div class="contact-icon mb-3">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="contact-link">
+                  <a href="mailto:gus.threlfall@gmail.com" target="_blank">gus.threlfall@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon mb-3">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-link">
+                  <a href="tel:+44 (0) 7774072002" target="_blank">+44 (0) 7774072002</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form action="action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="joebloggs@gmail.com">
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+              </form>
+            </div>
           </div>
         </div>
       </div>
