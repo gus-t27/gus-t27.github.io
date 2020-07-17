@@ -3,13 +3,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*max-width: 100vw;*/
+}
+
+.banner-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner img {
   background-size: cover;
   object-position: 50% 10%;
-/*  object-fit: cover;*/
+  object-fit: cover;
   height: 100vh;
   z-index: -1;
   width: 100vw;
@@ -17,14 +23,12 @@
 
 .banner .banner-title {
   color: #e2e2e2;
- /* position: relative;
-  bottom: 500px;*/
+  text-align: center;
 }
 
 .banner .btn {
-  /*position: relative;
-  bottom: 480px;*/
   padding: 10px 20px;
+  margin-top: 14px;
 }
 
 .banner .banner-title h1 {
