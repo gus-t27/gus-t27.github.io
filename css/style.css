@@ -4,9 +4,16 @@
 @import "services.css";
 @import "about_me.css";
 @import "banner.css";
+@import "projects.css";
+@import "contact.css";
 
 body {
   background-color: #F7F9FC;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {

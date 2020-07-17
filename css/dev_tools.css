@@ -1,7 +1,7 @@
 
 /*----- This is messing with the grid at the moment -----*/
 
-.tools-container {
+.tools {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,36 +58,36 @@
 
 /*------ This isn't working at the moment! ------*/
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
+
+@media only screen and (max-width: 575px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+
+@media only screen and (max-width: 576px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+
+@media only screen and (max-width: 768px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+
+@media only screen and (max-width: 992px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+
+@media only screen and (max-width: 1200px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
