@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   padding-bottom: 0px;
+  z-index: 1;
 }
 
 .shadow {
@@ -56,26 +57,84 @@
   color: #818181;
 }
 
-.page-links .icon {
+/*.page-links .icon {
+  display: none;
+}*/
+
+.dropdown {
   display: none;
 }
 
-@media screen and (max-height: 450px) {
+.dropdown a {
+  display: block;
+}
+
+.dropdown button:focus {
+  outline: 0;
+}
+
+@media (max-width: 717px) {
+  .navbar {
+    text-align: center;
+  }
+  .nav-left {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+  .dropdown a {
+    display: inline;
+    color: #84a9ac;
+    padding: 0px 2px 0px 2px;
+  }
+  .dropdown a i {
+    padding-right: 4px;
+  }
+  .dropdown a:hover {
+    color: #818181;
+  }
+}
+
+.navbar-collapse {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #84a9ac;
+  border-color: #84a9ac;
+}
+
+.navbar-dark .navbar-toggler:hover {
+  color: #818181;
+  border-color: #818181;
+}
+
+/*@media screen and (max-height: 450px) {
   .navbar {padding-top: 15px;}
   .navbar a {font-size: 18px;}
 }
-
+*/
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the page-links (.icon) */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .page-links a:not(:first-child) {display: none;}
   .page-links a.icon {
     float: right;
     display: block;
   }
-}
+}*/
 
 /* The "responsive" class is added to the page-links with JavaScript when the user clicks on the icon. This class makes the page-links look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .page-links.responsive {position: relative;}
   .page-links.responsive a.icon {
     position: absolute;
@@ -88,4 +147,4 @@
     text-align: left;
   }
 }
-
+*/

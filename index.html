@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <div class="navbar navbar-dark navbar-expand-md shadow" id="nav">
+    <div class="navbar navbar-dark navbar-expand-md bg-light shadow" id="nav">
       <div class="nav-left">
         <div class="title" style="color: #84a9ac;">
           <h5><strong>Gus Threlfall</strong></h5>
@@ -35,7 +35,20 @@
         </div>
       </div>
 
-      <div class="dropdown-content page-links">
+      <div class="dropdown">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="dropbtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a href="#home"><i class="fas fa-home"></i>Home</a>
+          <a href="#services"><i class="fas fa-briefcase"></i>Services</a>
+          <a href="#code"><i class="fas fa-code"></i>Projects</a>
+          <a href="#tools"><i class="fas fa-cubes"></i>Tools</a>
+          <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+        </div>
+      </div>
+
+      <div class="nav-right page-links">
         <a href="#home"><i class="fas fa-home"></i>Home</a>
         <a href="#services"><i class="fas fa-briefcase"></i>Services</a>
         <a href="#code"><i class="fas fa-code"></i>Projects</a>
@@ -413,7 +426,7 @@
             <h2>Get In Touch!</h2>
           </div>
           <div class="form-container">
-            <div class="contact-card-container d-flex">
+            <div class="contact-card-container">
               <div class="contact-card">
                 <div class="contact-icon mb-3">
                   <i class="far fa-envelope"></i>
@@ -475,7 +488,7 @@
 
 
     <script type="text/javascript" src="javascript/nav_scroll.js"></script>
-    <script type="text/javascript" src="javascript/nav_active.js"></script>
+    <!-- <script type="text/javascript" src="javascript/nav_active.js"></script> -->
     <script type="text/javascript" src="javascript/contact_form.js"></script>
 <!--     <script type="text/javascript" src="javascript/nav_responsive.js"></script> -->
   </body>

@@ -1,6 +1,3 @@
-
-/*----- This is messing with the grid at the moment -----*/
-
 .tools {
   display: flex;
   flex-direction: column;
@@ -51,46 +48,41 @@
 
 .dev-tools {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
   grid-gap: 16px;
 }
 
+@media only screen and (max-width: 395px) {
+  .dev-tools {
+    grid-template-columns: 1fr;
+  }
+}
 
-/*------ This isn't working at the moment! ------*/
 
-
-@media only screen and (max-width: 575px) {
+@media only screen and (min-width: 395px) and (max-width: 575px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 575px) and (max-width: 993px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 
-@media only screen and (max-width: 992px) {
-  .dev-tools {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
-
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .dev-tools {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
-
 
