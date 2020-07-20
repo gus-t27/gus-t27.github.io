@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <div class="navbar navbar-dark navbar-expand-md bg-light shadow" id="nav">
+    <div class="navbar navbar-dark navbar-expand-md shadow" id="nav">
       <div class="nav-left">
         <div class="title" style="color: #84a9ac;">
           <h5><strong>Gus Threlfall</strong></h5>
@@ -37,6 +37,7 @@
 
       <div class="dropdown-content page-links">
         <a href="#home"><i class="fas fa-home"></i>Home</a>
+        <a href="#services"><i class="fas fa-briefcase"></i>Services</a>
         <a href="#code"><i class="fas fa-code"></i>Projects</a>
         <a href="#tools"><i class="fas fa-cubes"></i>Tools</a>
         <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
@@ -52,17 +53,23 @@
             <h5>Catering to all of your web development needs</h5>
           </div>
           <div>
-            <a class="btn btn-success" href="#about">Learn More</a>
+            <a class="btn btn-success" href="#services">Learn More</a>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="about-me" id="about">
+        <br>
+        <br>
+
+        <div id="services" class="services-anchor">
+          <br>
+          <br>
         </div>
-        <br>
-        <br>
+
         <div class="services">
-          <h2>Services</h2>
+          <div class="services-title mt-5 mb-5">
+            <h2>Services</h2>
+          </div>
           <div class="cards mt-5 mb-5">
             <div class="card-category">
               <div class="card-body">
@@ -87,13 +94,24 @@
             </div>
           </div>
         </div>
-        <div class="projects" id="code">
-          <div class="projects-title">
+
+        <div id="code" class="projects-anchor">
+          <br>
+          <br>
+        </div>
+
+        <div class="projects">
+          <div class="projects-title mt-5 mb-5">
             <h2>Projects</h2>
           </div>
         </div>
 
-        <div class="tools" id="tools">
+        <div id="tools" class="tools-anchor">
+          <br>
+          <br>
+        </div>
+
+        <div class="tools">
           <div class="tools-title mt-5 mb-5">
             <h2>Development Tools</h2>
             <p>(Click on a tool for more info)</p>
@@ -385,7 +403,12 @@
           </div>
         </div>
 
-        <div class="contact" id="contact">
+        <div id="contact" class="contact-anchor">
+          <br>
+          <br>
+        </div>
+
+        <div class="contact">
           <div class="contact-title mt-5 mb-5">
             <h2>Get In Touch!</h2>
           </div>
@@ -424,21 +447,24 @@
                 </div>
               </div>
             </div>
+
+
             <div class="contact-form">
-              <form action="action_page.php">
+              <form action="https://formspree.io/xgenrwkl" method="POST" id="contact-form">
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="firstname" required placeholder="Your first name..">
 
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
 
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="joebloggs@gmail.com">
+                <input type="text" id="email" name="email" required placeholder="joebloggs@gmail.com">
 
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Write something.." style="height:200px"></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" id="contact-submit-button" value="Submit">
+                <p class="contact-send-status" id="contact-form-status"></p>
 
               </form>
             </div>
@@ -449,7 +475,9 @@
 
 
     <script type="text/javascript" src="javascript/nav_scroll.js"></script>
-    <script type="text/javascript" src="javascript/nav_responsive.js"></script>
+    <script type="text/javascript" src="javascript/nav_active.js"></script>
+    <script type="text/javascript" src="javascript/contact_form.js"></script>
+<!--     <script type="text/javascript" src="javascript/nav_responsive.js"></script> -->
   </body>
 </html>
 
