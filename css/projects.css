@@ -1,3 +1,35 @@
 .projects-title {
   text-align: center;
 }
+
+.project-card img {
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.bild-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.airbnb-card {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.tool-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tool-logos img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin: 5px;
+}
