@@ -73,7 +73,7 @@
   outline: 0;
 }
 
-@media (max-width: 717px) {
+@media (max-width: 773px) {
   .navbar {
     text-align: center;
   }
