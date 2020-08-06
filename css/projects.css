@@ -1,3 +1,9 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects-title {
   text-align: center;
 }
@@ -8,17 +14,30 @@
   object-fit: contain;
 }
 
-.bild-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.project-card {
+  display: grid;
+  grid-gap: 16px;
+  /*flex-direction: row;
+  align-items: center;*/
 }
 
-.airbnb-card {
+.bild-content {
+ /* display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+  /*min-height: 100vh;*/
+  padding: 5%;
+}
+
+.airbnb-content {
+  padding: 5%;
+}
+
+/*.airbnb-card {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-}
+}*/
 
 .tool-logos {
   display: flex;
@@ -34,3 +53,36 @@
   margin: 5px;
 }
 
+@media only screen and (max-width: 395px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media only screen and (min-width: 395px) and (max-width: 575px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media only screen and (min-width: 575px) and (max-width: 993px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .project-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .project-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
