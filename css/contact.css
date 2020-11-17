@@ -121,7 +121,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-#g-recaptcha-response {
+.g-recaptcha {
   display: block !important;
   position: absolute;
   margin: -78px 0 0 0 !important;
