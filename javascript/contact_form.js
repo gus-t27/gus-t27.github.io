@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function() {
   }
 
   function error() {
-    status.innerHTML = "Oops! There was a problem. Please try again.";
+    status.innerHTML = "Oops! There was a problem. Have you ticked the box above?";
   }
 
   // handle the form submission event
